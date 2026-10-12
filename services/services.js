@@ -1,6 +1,5 @@
 import Paciente from "../models/pacientes.js";
 
-
 async function getAllPacientes() {
     return await Paciente.find();
 }
@@ -25,7 +24,6 @@ async function updatePaciente(id, nome, idade) {
 async function deletePaciente(id) {
     return await Paciente.findByIdAndDelete(id);
 }
-
 
 export default {
     getAllPacientes,
